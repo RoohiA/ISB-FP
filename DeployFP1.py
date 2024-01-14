@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report
 # Function to load data
 @st.cache(allow_output_mutation=True)
 def load_data():
-    data_path = 'CompanyNewsHeadlines_ICICI_Consolidated.xls'
+    data_path = '/Documents/GitHub/ISB-FP/CompanyNewsHeadlines_ICICI_Consolidated.xls'
     try:
         return pd.read_excel(data_path)
     except Exception as e:
